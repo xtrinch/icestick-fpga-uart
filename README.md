@@ -20,6 +20,8 @@ Both should return either pong or the info you can find harcoded in the `uart_co
   - Pong: `0x01`
   - Get info response: `0x10 00 00 00 de ad be ef 13 37 0d 13 00 00 00 00`
 
+First byte of the packet is always the packet length, fourth byte is the message type and the rest is the payload.
+
 ## Build stats
 
 FPGA usage is the following:
